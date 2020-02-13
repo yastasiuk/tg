@@ -1,0 +1,45 @@
+<form class="signin-form profile-input-form">
+    <div class="avatar-background"></div>
+    <div class="image-picker profile-image--picker">
+        <input type="file" class="image-uploader" accept="image/*">
+        <div class="image-picker-popup hidden">
+            <div class="image-transformer--container">
+                <div class="image-transformer--header">
+                    <button class="image-not-save-btn" type="button">X</button>
+                    <span>Drag to Reposition</span>
+                </div>
+                <div class="image-transformer--box">
+                    <image class="image-transformer--image image-transformer--backgroud-image"></image>
+                    <div class="image-transformer--image_background"></div>
+                </div>
+                <button type="button" class="image-save-btn">Save</button>
+            </div>
+            
+        </div>
+    </div>
+    <h2 class="signin-header">Your Name</h2>
+    <p class="signin-description">Enter your name and add<br> a profile picture.</p>
+    <div class="input-group">
+        <!-- TODO: Use handlebars to export directly -->
+        <div id="profile-name--input">
+            <div class="line-input">
+                <div class="input__prepend hidden">msg</div>
+                <input class="input__field" type="text" placeholder="Name">
+            </div>
+            <div class="input__header">header</div>
+            <div class="input__error">error</div>
+        </div>
+    </div>
+    <div class="input-group">
+        <div id="profile-surname--input">
+            <div class="line-input">
+                <div class="input__prepend hidden">msg</div>
+                <input class="input__field" type="text" placeholder="Last name">
+            </div>
+            <div class="input__header">header</div>
+            <div class="input__error">error</div>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn--submit hidden">START MESSAGING</button>
+</form>

@@ -1,0 +1,46 @@
+$blue: rgba(78, 164, 246, 1);
+$red: red;
+
+.input__header {
+    display: none;
+    position: relative;
+    &.active {
+        display: inline;
+        top: -61px;
+        left: 15px;
+        padding: 0 5px;
+        background: white;
+    }
+    &.active {
+        color: $blue;
+    }
+    &.error {
+        color: $red;
+    }
+}
+.input__prepend {
+    align-self: center;
+    padding-right: 5px;
+    &.hidden {
+        display: none;
+    }
+}
+// Different fonts :(
+.input__field, .input__prepend {
+    font-size: 16px;
+}
+.input__field {
+    width: 100%;
+    font-weight: 300;
+}
+.input__error {
+    display: none;
+}
+
+.show-password {
+    align-self: center;
+    color: blue;
+    &.active {
+        color: red;
+    }
+}

@@ -1,0 +1,20 @@
+<form class="signin-form sms-input-form">
+    <i class="signin-icon monkey-icon">Monkey icon</i>
+    <div class="input-group phone-line">
+        <div class="phone-number"></div>
+        <button type="button" id="change-phone">EP</button>
+    </div>
+    <p class="signin-description">We have sent you an SMS<br> with the code.</p>
+    <div class="input-group">
+        <!-- TODO: Use handlebars to export directly -->
+        <div id="sms-input">
+            <div class="line-input">
+                <div class="input__prepend hidden">msg</div>
+                <input class="input__field" type="text" placeholder="Code">
+            </div>
+            <div class="input__header">header</div>
+            <div class="input__error">error</div>
+        </div>
+    </div>
+    <button type="submit" class="btn--submit hidden">NEXT</button>
+</form>

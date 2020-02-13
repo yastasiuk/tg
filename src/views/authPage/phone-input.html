@@ -1,0 +1,45 @@
+<form class="signin-form">
+    <i class="signin-icon">Telegram ICON</i>
+    <h2 class="signin-header">Sign in to Telegram</h2>
+    <p class="signin-description">Please confirm you country and<br> enter you phone number.</p>
+    <div class="input-group drop-down" id="country-dropdown">
+        <!-- <div class="drop-down"> -->
+        <div class="line-input" id="country-dropdown__input">
+            <div class="input__placeholder">
+                <p class="placeholder">Country</p>
+                <span>
+                    <svg width="14px" height="7px" viewBox="0 0 10 5" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Delivery" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Transactions-(Landing)" transform="translate(-1360.000000, -29.000000)"
+                                fill="#CDCFD3" fill-rule="nonzero">
+                                <g id="Group-4" transform="translate(1360.000000, 29.000000)">
+                                    <polygon id="Shape" points="0 0 5 5 10 0"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="structure hide" id="contries__list">
+            <!-- list of selectables -->
+        </div>
+    </div>
+    <div class="input-group">
+        <!-- TODO: Use handlebars to export directly -->
+        <div id="phone-input">
+            <div class="line-input">
+                <div class="input__prepend hidden">msg</div>
+                <input class="input__field" type="tel" placeholder="Phone Number">
+            </div>
+            <div class="input__header">header</div>
+            <div class="input__error">error</div>
+        </div>
+    </div>
+    <div class="input-group keep-signed__group">
+        <input class="input-checkbox" id="keep-signed" type="checkbox" class="">
+        <label class="input-label" for="keep-signed">Keep me signed in</label>
+    </div>
+    <button type="submit" class="btn--submit hidden">NEXT</button>
+</form>
